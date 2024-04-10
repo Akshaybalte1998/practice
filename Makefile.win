@@ -1,15 +1,15 @@
-# Project: Project1
+# Project: C++_LAB
 # Makefile created by Dev-C++ 5.11
 
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = A_diamond.o B_virtual_diamond.o C_File.o
-LINKOBJ  = A_diamond.o B_virtual_diamond.o C_File.o
+OBJ      = 1.o 2.o 3.o
+LINKOBJ  = 1.o 2.o 3.o
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
-BIN      = day6.exe
+BIN      = C++_LAB.exe
 CXXFLAGS = $(CXXINCS) 
 CFLAGS   = $(INCS) 
 RM       = rm.exe -f
@@ -24,11 +24,11 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-A_diamond.o: A_diamond.cpp
-	$(CPP) -c A_diamond.cpp -o A_diamond.o $(CXXFLAGS)
+1.o: 1.cpp
+	$(CPP) -c 1.cpp -o 1.o $(CXXFLAGS)
 
-B_virtual_diamond.o: B_virtual_diamond.cpp
-	$(CPP) -c B_virtual_diamond.cpp -o B_virtual_diamond.o $(CXXFLAGS)
+2.o: 2.cpp
+	$(CPP) -c 2.cpp -o 2.o $(CXXFLAGS)
 
-C_File.o: C_File.cpp
-	$(CPP) -c C_File.cpp -o C_File.o $(CXXFLAGS)
+3.o: 3.cpp
+	$(CPP) -c 3.cpp -o 3.o $(CXXFLAGS)
